@@ -1,4 +1,26 @@
-// Function to add form data to the table and localStorage
+function validateDOB() {
+    const dobInput = document.getElementById("dob");
+    const dob = new Date(dobInput.value);
+    const today = new Date();
+    const minAge = 18;
+    const maxAge = 55;
+
+    const diffInMs = today - dob;
+    const ageDate = new Date(diffInMs);
+    const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+
+    if (isNaN(dob.getTime())) {
+        alert("Please enter a valid date of birth.");
+        return false;
+    }
+
+    if (age < minAge || age > maxAge) {
+        alert("Age must be between 18 and 55 years.");
+        return false;
+    }
+
+    return true;
+}// Function to add form data to the table and localStorage
 function addDataToTable() {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
@@ -33,29 +55,6 @@ function addDataToTable() {
     let existingData = JSON.parse(localStorage.getItem("formData")) || [];
     existingData.push(newData);
     localStorage.setItem("formData", JSON.stringify(existingData));
-}
-function validateDOB() {
-    const dobInput = document.getElementById("dob");
-    const dob = new Date(dobInput.value);
-    const today = new Date();
-    const minAge = 18;
-    const maxAge = 55;
-
-    const diffInMs = today - dob;
-    const ageDate = new Date(diffInMs);
-    const age = Math.abs(ageDate.getUTCFullYear() - 1970);
-
-    if (isNaN(dob.getTime())) {
-        alert("Please enter a valid date of birth.");
-        return false;
-    }
-
-    if (age < minAge || age > maxAge) {
-        alert("Age must be between 18 and 55 years.");
-        return false;
-    }
-
-    return true;
 }
 // Function to load data from localStorage
 function loadTableData() {
