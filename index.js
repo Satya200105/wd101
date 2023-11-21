@@ -44,7 +44,6 @@ const dispEntries = () => {
     let details = document.getElementById("tableView");
     details.innerHTML = table;
 }
-
 dispEntries();
 
 const formSubmit = (event) => {
