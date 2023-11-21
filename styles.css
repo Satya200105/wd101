@@ -45,7 +45,7 @@ input[type="checkbox"] {
 }
 button[type="submit"] {
     padding: 10px 20px;
-    background-color: light green;
+    background-color: #90EE90;
     color: white;
     border: none;
     border-radius: 5px;
