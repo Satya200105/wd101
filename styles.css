@@ -1,75 +1,52 @@
-/* General styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family:Arial,Sans-serif;
     background-color: #f5f5f5;
 }
 
 h1 {
-    background-color: #f5f5f5;
-    color: black;
-    padding: 10px;
+    margin: 4px;
+}
+
+.container {
+    max-width: 70%;
+    margin: auto;
     text-align: center;
 }
 
-main {
-    max-width: 600px;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.parts {
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid;
+    padding: 5px;
+    background-color: rgb(145, 180, 210);
 }
 
-form {
-    display: grid;
-    gap: 10px;
+.block {
+    display: block;
+    margin: auto;
+    margin-top: 3px;
 }
 
-label {
-    font-weight: bold;
-}
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"]{
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-input[type="checkbox"] {
-    margin-left:0pt
-}
-button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #90EE90;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+.table {
+    width:100%;
+    border: 2px solid;
+    margin: auto;
 }
 
-button[type="submit"]:hover {
-    background-color: #555;
+.bor {
+    border: 1px solid;
+    padding: 1px;
 }
 
-/* Styles for table */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+.float {
+    margin: auto;
+    margin-top: 3px;
 }
 
-table th, table td {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    text-align: left;
+.form {
+    margin: auto;
 }
 
-table th {
-    background-color: #f5f5f5;
+.submit {
+    background-color: rgb(4, 213, 144);
 }
