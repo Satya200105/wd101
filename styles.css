@@ -36,7 +36,7 @@ input[type="email"],
 input[type="password"],
 input[type="date"],
 input[type="checkbox"] {
-    width: 80%;
+    width: 100%;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
