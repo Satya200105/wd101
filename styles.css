@@ -34,15 +34,16 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="date"],
-input[type="checkbox"] {
+input[type="date"]{
     width: 100%;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
+input[type="checkbox"] {
+    margin-left:10pt
+}
 button[type="submit"] {
     padding: 10px 20px;
     background-color: #333;
