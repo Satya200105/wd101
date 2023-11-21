@@ -23,7 +23,7 @@ main {
 }
 
 form {
-    display: block;
+    display: grid;
     gap: 10px;
 }
 
